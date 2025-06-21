@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <nav id="userNav" class="navbar d-none navbar-expand-lg ">
+  <div class="container-fluid ">
+    <a class="navbar-brand text-white text-decoration-none ps-5" href="#">Smart Login</a>
+    <button class="btn btn-outline-danger me-5" id="logOutBtn" type="submit">Log Out</button>
+    </div>
+  </nav>
+
+    <div class="container my-5">
+
+
+      <div
+      id="login"
+        class="login p-5 w-75 m-auto d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>Smart Login System</h1>
+    
+          <div class="w-100">
+        <label for="logInEmail" class="form-label"
+          ></label
+        >
+        <input 
+          type="email"
+          class="form-control "
+          id="logInEmail"
+          placeholder="Enter Your Email"
+        />
+      </div>
+    
+
+         <div class="mb-3 w-100">
+        <label for="logInPassword" class="form-label"
+          ></label
+        >
+        <input 
+          type="password"
+          class="form-control "
+          id="logInPassword"
+          placeholder="Enter Your password"
+        />
+      </div>
+      <h5 id="logInError" class="text-danger d-none">Invalid email or password.</h5>
+      <h5 id="loginEmptyError" class="text-danger d-none">Please fill in all fields.</h5>
+
+      
+      <button onclick="" id="logInBtn" class="btn btn-outline-info w-100 my-3">Login</button>
+      <p class="text-white">Don’t have an account? <a class="text-white" id="signInAnchor" onclick="openSignUp()">Sign Up</a></p>  
+    </div>
+
+      <div
+        id="signup" class="signup d-none p-5 w-75 m-auto d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>Smart Login System</h1>
+    
+          <div class="w-100">
+        <label for="signUpName" class="form-label"
+          ></label
+        >
+        <input 
+          type="text"
+          class="form-control "
+          id="signUpName"
+          placeholder="Enter Your Username"
+        />
+      </div>
+    
+
+          <div class="w-100">
+        <label for="mail" class="form-label"
+          ></label
+        >
+        <input 
+          type="email"
+          class="form-control "
+          id="signUpEmail"
+          placeholder="Enter Your Email"
+        />
+      </div>
+      
+        <div class="mb-3 w-100">
+        <label for="signUpPassword" class="form-label"
+          ></label
+        >
+        <input 
+          type="password"
+          class="form-control "
+          id="signUpPassword"
+          placeholder="Enter Your password"
+        />
+      </div>
+
+      <h5 id="signUpError" class="d-none text-danger">Email is already registered. Please use a different email.</h5>
+      <h5 id="signUpEmptyError" class="d-none text-danger">Please fill in all fields.</h5>
+      <h5 id="signUpFormatError" class="d-none text-danger">Please Enter A Valid Email.</h5>
+
+      <h5 id="signUpSuccess" class="d-none text-success">Sign up successful!</h5>
+
+      <button onclick="" id="signUpBtn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+      <p class="text-white">You have an account? <a class="text-white" onclick="openLogIn()" id="signInAnchor">Signin</a></p>  
+
+    </div>
+
+
+      <div
+         id="welcomePage" class="welcomePage d-none p-5 w-75 m-auto d-flex justify-content-center align-items-center flex-column"
+      >
+        <!-- <h1>Welcome Hassan</h1> -->
+ 
+    </div>
+
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
